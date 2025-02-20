@@ -1,0 +1,90 @@
+/* Загальні стилі */
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: #f4f4f4;
+    margin: 0;
+    padding: 0;
+}
+
+/* Верхня секція */
+.title {
+    text-align: center;
+    background: #fff;
+    width: 100%;
+    padding: 20px 0;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.photo img {
+    border-radius: 50%;
+    width: 120px;
+    height: 120px;
+    object-fit: cover;
+    border: 4px solid #ddd;
+}
+
+/* Головний контейнер */
+.container {
+    display: flex;
+    max-width: 900px;
+    width: 100%;
+    margin-top: 20px;
+}
+
+/* Ліва колонка */
+.left {
+    width: 35%;
+    background: #333;
+    color: white;
+    padding: 20px;
+}
+
+.left h2 {
+    text-transform: uppercase;
+    font-size: 16px;
+}
+
+.left hr {
+    border: 1px solid #fff;
+    margin: 10px 0;
+}
+
+.left ul {
+    list-style: none;
+    padding: 0;
+}
+
+.left ul li {
+    padding: 5px 0;
+}
+
+/* Права колонка */
+.right {
+    width: 65%;
+    background: white;
+    padding: 20px;
+}
+
+.right h2 {
+    text-transform: uppercase;
+    font-size: 16px;
+}
+
+.right hr {
+    border: 1px solid #ddd;
+    margin: 10px 0;
+}
+
+.right p {
+    font-size: 14px;
+    line-height: 1.6;
+}
+@media (max-width: 600px) {
+    .container {
+        flex-direction: column;
+        align-items: center;
+    }
+}
